@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALN Construction Uganda | Design & Build</title>
+    <meta name="description" content="ALN Construction Uganda - Leading construction company in Kampala designing modern buildings at affordable costs.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aln: {
+                            blue: '#0f172a', // Slate 900
+                            gold: '#f59e0b', // Amber 500
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Hero Background */
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex-shrink-0 flex items-center group">
+                    <img class="h-12 w-auto transform group-hover:scale-105 transition" src="https://alnplans.web.app/images/aln-logo-1.svg" alt="ALN Construction Logo">
+                    <span class="ml-3 font-bold text-xl text-aln-blue hidden sm:block">ALN Construction</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-slate-600 hover:text-aln-gold font-medium transition hover:-translate-y-0.5">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-aln-gold font-medium transition hover:-translate-y-0.5">About Us</a>
+                    <a href="#services" class="text-slate-600 hover:text-aln-gold font-medium transition hover:-translate-y-0.5">Services</a>
+                    <a href="#projects" class="text-slate-600 hover:text-aln-gold font-medium transition hover:-translate-y-0.5">Projects</a>
+                    <a href="#contact" class="text-slate-600 hover:text-aln-gold font-medium transition hover:-translate-y-0.5">Contact</a>
+                    <a href="tel:0787961719" class="bg-aln-blue text-white px-5 py-2 rounded hover:bg-slate-800 transition font-bold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="fas fa-phone-alt mr-2 text-aln-gold"></i>0787 961 719
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-slate-600 hover:text-aln-blue focus:outline-none p-2 border border-transparent rounded hover:border-slate-200">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-xl absolute w-full">
+            <a href="#home" onclick="toggleMobileMenu()" class="block w-full text-left px-6 py-4 text-slate-700 hover:bg-gray-50 border-b">Home</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block w-full text-left px-6 py-4 text-slate-700 hover:bg-gray-50 border-b">About Us</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block w-full text-left px-6 py-4 text-slate-700 hover:bg-gray-50 border-b">Services</a>
+            <a href="#projects" onclick="toggleMobileMenu()" class="block w-full text-left px-6 py-4 text-slate-700 hover:bg-gray-50 border-b">Projects</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block w-full text-left px-6 py-4 text-aln-gold font-bold hover:bg-gray-50">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="flex-grow">
+
+        <!-- SECTION: HERO (HOME) -->
+        <section id="home" class="hero-bg min-h-[90vh] flex items-center justify-center text-center px-4 relative pt-20 pb-12">
+            <div class="max-w-5xl mx-auto text-white z-10">
+                <div class="animate-fade-in-up">
+                    <span class="bg-aln-gold text-white px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wide mb-6 inline-block shadow-lg">Uganda's Finest Construction</span>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight leading-tight text-shadow-lg">
+                        Design & Build <br/> <span class="text-aln-gold">Professional</span> Spaces
+                    </h1>
+                    <p class="text-lg md:text-2xl text-slate-100 mb-10 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md">
+                        National Estate's and Construction Company. We design and build highly professional, thought-through modern buildings at a cost that makes sense.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-5">
+                        <a href="#contact" class="bg-aln-gold hover:bg-amber-600 text-white font-bold py-4 px-10 rounded text-lg shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                            Get a Free Quote
+                        </a>
+                        <a href="#projects" class="bg-white hover:bg-gray-100 text-aln-blue font-bold py-4 px-10 rounded text-lg shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative bottom curve -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+                <svg class="relative block w-full h-[60px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-slate-50"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SECTION: STATS -->
+        <section class="py-16 -mt-2 relative z-20">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-8 bg-white rounded-2xl shadow-lg border-b-4 border-aln-gold transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-4xl font-bold text-aln-blue mb-2">100+</div>
+                    <div class="text-xs text-slate-500 uppercase font-bold tracking-widest">Projects</div>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-lg border-b-4 border-aln-gold transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-4xl font-bold text-aln-blue mb-2">10+</div>
+                    <div class="text-xs text-slate-500 uppercase font-bold tracking-widest">Years Exp.</div>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-lg border-b-4 border-aln-gold transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-4xl font-bold text-aln-blue mb-2">Kampala</div>
+                    <div class="text-xs text-slate-500 uppercase font-bold tracking-widest">Based In</div>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-lg border-b-4 border-aln-gold transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-4xl font-bold text-aln-blue mb-2">24/7</div>
+                    <div class="text-xs text-slate-500 uppercase font-bold tracking-widest">Support</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: ABOUT -->
+        <section id="about" class="py-20 md:py-32 bg-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-aln-gold font-bold uppercase tracking-widest text-sm mb-2">Who We Are</h2>
+                    <h3 class="text-3xl md:text-5xl font-bold text-slate-900">Building Trust Through Quality</h3>
+                    <div class="w-24 h-1 bg-aln-gold mx-auto mt-6 rounded-full"></div>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2 relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-aln-gold/10 rounded-full z-0"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-aln-blue/10 rounded-full z-0"></div>
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Construction Planning" class="rounded-xl shadow-2xl relative z-10 border-4 border-white">
+                        <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl hidden md:block z-20 border-l-4 border-aln-gold">
+                            <p class="font-bold text-3xl text-aln-blue">Best</p>
+                            <p class="text-sm text-slate-500 uppercase tracking-wide">Construction Team</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h4 class="text-2xl font-bold text-aln-blue mb-6">Professional & Modern Builders in Kampala</h4>
+                        <p class="text-slate-600 mb-6 leading-relaxed text-lg">
+                            National Estate's and Construction Company (ALN) is a leading construction firm based in <strong>Ntinda Kigowa Rd, Kampala</strong>. We specialize in transforming architectural dreams into tangible realities.
+                        </p>
+                        <p class="text-slate-600 mb-8 leading-relaxed text-lg">
+                            Our core philosophy is that modern buildings should be "thought through." This means we don't just stack bricks; we analyze the environment, the usage, and the budget to create structures that stand the test of time and look beautiful.
+                        </p>
+                        <div class="bg-slate-50 border-l-4 border-aln-gold p-6 rounded-r-lg mb-8">
+                            <p class="font-medium text-slate-800 italic text-lg">"Designs and Builds highly professional and thought through modern buildings at a cheap cost."</p>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-slate-700">
+                                <i class="fas fa-check-circle text-aln-gold mr-3 text-xl"></i> Detailed Cost Estimation
+                            </li>
+                            <li class="flex items-center text-slate-700">
+                                <i class="fas fa-check-circle text-aln-gold mr-3 text-xl"></i> Modern Architectural Plans
+                            </li>
+                            <li class="flex items-center text-slate-700">
+                                <i class="fas fa-check-circle text-aln-gold mr-3 text-xl"></i> Timely Project Delivery
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: SERVICES -->
+        <section id="services" class="py-20 md:py-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20">
+                    <h2 class="text-aln-gold font-bold uppercase tracking-widest text-sm mb-2">What We Do</h2>
+                    <h3 class="text-3xl md:text-5xl font-bold text-slate-900">Comprehensive Services</h3>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto text-lg">We offer end-to-end construction solutions tailored to your specific needs and budget.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 group">
+                        <div class="w-16 h-16 bg-blue-50 text-aln-blue rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900 group-hover:text-aln-gold transition">Architectural Design</h3>
+                        <p class="text-slate-600 leading-relaxed">We create detailed 2D and 3D plans. Our designs focus on modern aesthetics while maximizing space utility and natural light.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 group">
+                        <div class="w-16 h-16 bg-amber-50 text-aln-gold rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900 group-hover:text-aln-gold transition">Construction & Build</h3>
+                        <p class="text-slate-600 leading-relaxed">Full-service construction management. From laying the foundation to roofing and finishing, we ensure high-quality workmanship.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 group">
+                        <div class="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900 group-hover:text-aln-gold transition">Cost Consultancy</h3>
+                        <p class="text-slate-600 leading-relaxed">We provide accurate Bills of Quantities (BOQs) and budget estimations to help you build efficiently without hidden costs.</p>
+                    </div>
+                    
+                     <!-- Service 4 -->
+                     <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 group">
+                        <div class="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900 group-hover:text-aln-gold transition">Estate Development</h3>
+                        <p class="text-slate-600 leading-relaxed">Developing residential estates with modern amenities, focusing on community living and security.</p>
+                    </div>
+
+                     <!-- Service 5 -->
+                     <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 group">
+                        <div class="w-16 h-16 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900 group-hover:text-aln-gold transition">Project Management</h3>
+                        <p class="text-slate-600 leading-relaxed">Overseeing your project from start to finish, ensuring timelines are met and quality standards are upheld.</p>
+                    </div>
+
+                     <!-- Service 6 -->
+                     <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 group">
+                        <div class="w-16 h-16 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900 group-hover:text-aln-gold transition">Renovations</h3>
+                        <p class="text-slate-600 leading-relaxed">Upgrading existing structures to meet modern standards, improving both value and livability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: PROJECTS (PORTFOLIO) -->
+        <section id="projects" class="py-20 md:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                    <div>
+                        <h2 class="text-aln-gold font-bold uppercase tracking-widest text-sm mb-2">Our Portfolio</h2>
+                        <h3 class="text-3xl md:text-5xl font-bold text-slate-900">Recent Masterpieces</h3>
+                    </div>
+                    <a href="#contact" class="hidden md:inline-block text-aln-gold font-bold hover:text-aln-blue transition mt-4 md:mt-0">
+                        Start Your Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="group relative overflow-hidden rounded-xl cursor-pointer h-80 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1600596542815-2a4d9f8770d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Home" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 md:opacity-0 md:group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
+                            <h3 class="text-2xl font-bold text-white translate-y-4 group-hover:translate-y-0 transition duration-500">Ntinda Heights</h3>
+                            <p class="text-aln-gold text-sm font-bold translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">Residential Complex</p>
+                        </div>
+                    </div>
+                     <!-- Project 2 -->
+                     <div class="group relative overflow-hidden rounded-xl cursor-pointer h-80 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Home" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 md:opacity-0 md:group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
+                            <h3 class="text-2xl font-bold text-white translate-y-4 group-hover:translate-y-0 transition duration-500">Kigowa Villa</h3>
+                            <p class="text-aln-gold text-sm font-bold translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">Private Residence</p>
+                        </div>
+                    </div>
+                     <!-- Project 3 -->
+                     <div class="group relative overflow-hidden rounded-xl cursor-pointer h-80 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Home" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 md:opacity-0 md:group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-6">
+                            <h3 class="text-2xl font-bold text-white translate-y-4 group-hover:translate-y-0 transition duration-500">Kampala Office</h3>
+                            <p class="text-aln-gold text-sm font-bold translate-y-4 group-hover:translate-y-0 transition duration-500 delay-75">Commercial Space</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center md:hidden">
+                    <a href="#contact" class="text-aln-gold font-bold hover:text-aln-blue transition">
+                        Start Your Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CONTACT -->
+        <section id="contact" class="py-20 md:py-32 bg-aln-blue relative">
+            <!-- Background pattern -->
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <!-- Contact Info -->
+                    <div class="text-white">
+                        <h2 class="text-aln-gold font-bold uppercase tracking-widest text-sm mb-2">Get In Touch</h2>
+                        <h3 class="text-3xl md:text-5xl font-bold mb-6">Let's Build Your Dream</h3>
+                        <p class="text-slate-300 mb-10 text-lg leading-relaxed">
+                            Ready to start your project? Contact ALN Construction Uganda today for a professional consultation or a detailed quote.
+                        </p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="bg-white/10 p-4 rounded-xl text-aln-gold">
+                                    <i class="fas fa-map-marker-alt text-xl w-6 text-center"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="font-bold text-xl mb-1">Visit Us</h3>
+                                    <p class="text-slate-300">Ntinda Kigowa Rd,<br>Kampala, Uganda</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white/10 p-4 rounded-xl text-aln-gold">
+                                    <i class="fas fa-phone-alt text-xl w-6 text-center"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="font-bold text-xl mb-1">Call Us</h3>
+                                    <p class="text-slate-300">
+                                        <a href="tel:0787961719" class="hover:text-aln-gold transition text-lg">0787 961 719</a>
+                                    </p>
+                                    <p class="text-slate-500 text-sm mt-1">Mon - Sat, 8am - 6pm</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white/10 p-4 rounded-xl text-aln-gold">
+                                    <i class="fas fa-envelope text-xl w-6 text-center"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <h3 class="font-bold text-xl mb-1">Email Us</h3>
+                                    <p class="text-slate-300">info@alnconstruction.co.ug</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Send us a message</h3>
+                        <form onsubmit="event.preventDefault(); alert('Thank you! We have received your message and will call you at 0787 961 719 shortly.');">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Your Name</label>
+                                    <input type="text" class="w-full px-4 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-aln-gold focus:ring-2 focus:ring-aln-gold/20 outline-none transition" placeholder="John Doe" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Phone Number</label>
+                                    <input type="tel" class="w-full px-4 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-aln-gold focus:ring-2 focus:ring-aln-gold/20 outline-none transition" placeholder="07XX XXX XXX" required>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Subject</label>
+                                <div class="relative">
+                                    <select class="w-full px-4 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-aln-gold focus:ring-2 focus:ring-aln-gold/20 outline-none transition appearance-none">
+                                        <option>Request a Quote</option>
+                                        <option>General Inquiry</option>
+                                        <option>Site Visit Request</option>
+                                        <option>Partnership</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+                                        <i class="fas fa-chevron-down text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-8">
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Message</label>
+                                <textarea class="w-full px-4 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-aln-gold focus:ring-2 focus:ring-aln-gold/20 outline-none transition h-32 resize-none" placeholder="Tell us about your construction needs..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-aln-gold text-white font-bold py-4 rounded-lg hover:bg-amber-600 transition shadow-lg transform hover:-translate-y-0.5">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-white py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img class="h-10 w-auto brightness-200 grayscale opacity-90" src="https://alnplans.web.app/images/aln-logo-1.svg" alt="Logo">
+                        <span class="ml-3 font-bold text-xl tracking-tight">ALN Construction</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs">
+                        Design and Build highly professional and thought-through modern buildings at an affordable cost. Serving Kampala and beyond.
+                    </p>
+                </div>
+                <!-- Links -->
+                <div class="md:text-center">
+                    <h4 class="font-bold text-lg mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="#home" class="hover:text-aln-gold transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-aln-gold transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-aln-gold transition">Services</a></li>
+                        <li><a href="#projects" class="hover:text-aln-gold transition">Portfolio</a></li>
+                        <li><a href="#contact" class="hover:text-aln-gold transition">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Small -->
+                <div class="md:text-right">
+                    <h4 class="font-bold text-lg mb-6 text-white">Contact Us</h4>
+                    <p class="text-slate-400 mb-2">Ntinda Kigowa Rd</p>
+                    <p class="text-slate-400 mb-4">Kampala, Uganda</p>
+                    <a href="tel:0787961719" class="text-white font-bold text-2xl hover:text-aln-gold transition block">0787 961 719</a>
+                    <a href="mailto:info@alnconstruction.co.ug" class="text-aln-gold text-sm hover:underline mt-2 block">info@alnconstruction.co.ug</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-slate-600 text-sm">&copy; 2024 ALN Construction Uganda. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-slate-500 hover:text-white transition transform hover:scale-110"><i class="fab fa-facebook-f text-lg"></i></a>
+                    <a href="#" class="text-slate-500 hover:text-white transition transform hover:scale-110"><i class="fab fa-whatsapp text-lg"></i></a>
+                    <a href="#" class="text-slate-500 hover:text-white transition transform hover:scale-110"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="#" class="text-slate-500 hover:text-white transition transform hover:scale-110"><i class="fab fa-twitter text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOBILE MENU -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
